@@ -49,6 +49,7 @@ public class PlayerController : MonoBehaviour
         // On collision with Obstacle game stops and Game Over is shown
         if (collision.gameObject.CompareTag("Ground"))
         {
+            Debug.Log("This code is being called");
             isOnGround = true;
             dirtParticle.Play();
         }
