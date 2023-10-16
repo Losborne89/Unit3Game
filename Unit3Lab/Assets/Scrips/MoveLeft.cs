@@ -18,7 +18,7 @@ public class MoveLeft : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Stops movement left when player collides with obstacle and game over
+        // Stops left movement when player collides with obstacle and game over
         if (playerControllerScript.gameOver == false)
         {
             transform.Translate(Vector3.left * Time.deltaTime * speed);
